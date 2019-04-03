@@ -26,7 +26,7 @@ const getRidesData = () => {
    const myRequest = new  XMLHttpRequest();
    myRequest.addEventListener('load', executeThisCodeAfterFileLoads);
    myRequest.addEventListener('error',executeThisCodeifXHRFAILS);
-   myRequest.open('GET', ',/db/rides.json');
+   myRequest.open('GET', './db/rides.json');
    myRequest.send();
    console.log(myRequest);
   
